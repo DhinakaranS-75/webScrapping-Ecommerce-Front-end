@@ -9,7 +9,7 @@ function App() {
   const handleSearch = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/products/${searchTerm}`
+        `http://localhost:3001/api/products/${searchTerm}`
       );
 
       setProducts(response.data);
