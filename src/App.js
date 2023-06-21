@@ -67,7 +67,7 @@ function App() {
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-cart-fill"
+                className="bi bi-cart-fill"
                 viewBox="0 0 16 16"
               >
                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
@@ -80,17 +80,17 @@ function App() {
 
       <div className="products ">
         {products.map((product, index) => (
-          <div class="card mb-4 " key={index} style={{ maxWidth: "540px" }}>
-            <div class="row g-2">
-              <div class="col-md-4">
-                <p class="card-text rating">
+          <div className="card mb-4 " key={index} style={{ maxWidth: "540px" }}>
+            <div className="row g-2">
+              <div className="col-md-4">
+                <p className="card-text rating">
                   {product.rating}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-star"
+                    className="bi bi-star"
                     viewBox="0 0 16 16"
                   >
                     <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
@@ -98,14 +98,14 @@ function App() {
                 </p>
                 <img
                   src={product.image}
-                  class="img-fluid rounded-start"
+                  className="img-fluid rounded-start"
                   alt={product.name}
                 />
               </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h6 class="card-title">{product.name}</h6>
-                  <h3 class="card-text">{product.price}</h3>
+              <div className="col-md-8">
+                <div className="card-body">
+                  <h6 className="card-title">{product.name}</h6>
+                  <h3 className="card-text">{product.price}</h3>
                 </div>
               </div>
             </div>
